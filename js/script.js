@@ -6,9 +6,9 @@ let computerMove = 'nieznany ruch';
 
 if(randomNumber == 1){
   computerMove = 'kamień';
-}else if(randomNumber == 2){
+} else if(randomNumber == 2){
   computerMove = 'papier';
-}else(randomNumber == 3){
+} else(randomNumber == 3){
   computerMove = 'nożyce';
 }
 
@@ -22,9 +22,9 @@ let playerMove = 'nieznany ruch';
 
 if(playerInput == '1'){
   playerMove = 'kamień';
-}else if(playerInput == '2'){
+} else if(playerInput == '2'){
   playerMove = 'papier';
-}else(playerInput == '3'){
+} else(playerInput == '3'){
   playerMove = 'nożyce';
 }
 
@@ -32,14 +32,14 @@ printMessage('Twój ruch to: ' + playerMove);
 
 if(computerMove == 'kamień' && playerMove == 'papier'){
   printMessage('Ty wygrywasz!');
-}else if(computerMove == 'papier' && playerMove == 'nożyce'){
+} else if(computerMove == 'papier' && playerMove == 'nożyce'){
   printMessage('Ty wygrywasz!');
-}else if(computerMove == 'nożyce' && playerMove == 'kamień'){
+} else if(computerMove == 'nożyce' && playerMove == 'kamień'){
   printMessage('Ty wygrywasz!');
-}else if(computerMove == playerMove){
+} else if(computerMove == playerMove){
   printMessage('Remis!');
-}else if(playerMove == 'nieznany ruch'){
+} else if(playerMove == 'nieznany ruch'){
   printMessage('Wybierz prawidłową wartość');
-}else{
+} else{
   printMessage('Przegrana!');
 }
