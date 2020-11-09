@@ -14,7 +14,7 @@ function getMoveName(argMoveId){
 
 function displayResult(argComputerMove, argPlayerMove){
 
-  console.log('moves:', argComputerMove, argPlayerMove);
+  console.log('Wynik: ' + argComputerMove, argPlayerMove);
 
   if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
     printMessage('Ty wygrywasz!');
@@ -63,5 +63,5 @@ if(playerInput == '1'){
 
 printMessage('Twój ruch to: ' + playerMove);
 
-printMessage('Wynik: ' + displayResult);
+(displayResult());
 
