@@ -68,7 +68,7 @@ if(playerInput == '1'){
 
 printMessage('Twój ruch to: ' + playerMove);
 
-displayResult(argComputerMove, argPlayerMove);
+displayResult(computerMove, playerMove);
 
 
 
