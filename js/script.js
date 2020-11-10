@@ -17,19 +17,19 @@ function displayResult(argComputerMove, argPlayerMove){
   console.log('moves:', argComputerMove, argPlayerMove);
 
   if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
-    console.log(wygrana01)
+    console.log('wygrana01')
     printMessage('Ty wygrywasz!');
   } else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
-    console.log(wygrana02)
+    console.log('wygrana02')
     printMessage('Ty wygrywasz!');
   } else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
-    console.log(wygrana03)
+    console.log('wygrana03')
     printMessage('Ty wygrywasz!');
   } else if(argComputerMove == argPlayerMove){
-    console.log(remis)
+    console.log('remis')
     printMessage('Remis!');
   } else{
-    console.log(przegrana)
+    console.log('przegrana')
     printMessage('Przegrana!');
   }
 }
@@ -68,5 +68,7 @@ if(playerInput == '1'){
 
 printMessage('Twój ruch to: ' + playerMove);
 
-displayResult();
+displayResult(argComputerMove, argPlayerMove);
+
+
 
